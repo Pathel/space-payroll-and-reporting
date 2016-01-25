@@ -21,6 +21,7 @@
 body {
     background-image: url('img/space.jpg');
     background-position: bottom;
+    background-attachment: fixed;
 }
 
 /* Members */
@@ -55,6 +56,24 @@ a.member-remove {
 }
 .blocks-title h2 {
     margin-top: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #222;
+    border-top: 1px solid #080808;
+}
+
+.powered-angular {
+    width: 50px;
+    height: 50px;
+    float: right;
 }
 
 @media screen and (min-width: 992px) {
