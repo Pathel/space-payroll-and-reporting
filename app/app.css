@@ -26,10 +26,26 @@ body {
 .member {
 }
 
+.member-type-selection {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.member-add-btn {
+    margin-bottom: 20px;
+}
+
 a.member-remove {
     float: right;
 }
 
+.block h3 {
+    margin-top: 0;
+}
+
+.ore-options {
+    margin-bottom: 10px;
+}
 .blocks-title h2 {
     margin-top: 0;
 }

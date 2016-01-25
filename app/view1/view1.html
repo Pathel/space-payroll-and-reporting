@@ -8,45 +8,79 @@
         </div>
     </div>
 
-    <div class="blocks well">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Collapsible Group Item #1
-                        </a>
-                    </h4>
+    <div class="block active-block well">
+        <div class="row">
+            <div class="col-md-10">
+                <h3>Active</h3>
+                <h4>Start: 0:30 (1 hr ago)</h4>
+            </div>
+            <div class="col-md-2 active-end-block-container">
+                <button type="button" class="btn btn-primary">End Block</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="block previous-block well">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>0:00 to 0:30</h3>
+            </div>
+
+            <div class="col-md-8">
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="member">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            Member One
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#" class="member-remove">
+                                <i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="member">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            Member Two
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#" class="member-remove">
+                                <i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            Member Three
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#" class="member-remove">
+                                <i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            Member Five
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#" class="member-remove">
+                                <i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Collapsible Group Item #2
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" ng-click="setFilters($event)" aria-expanded="false" aria-controls="collapseThree">
-                            Collapsible Group Item #3
-                        </a>
-                    </h4>
-                </div>
-            </div>
+
         </div>
     </div>
 
@@ -56,6 +90,22 @@
 <div class="col-md-4 mining-sidebar">
     <button type="button" class="btn btn-primary">Compute Report</button>
     <h3>Members</h3>
+    <input type="text" class="form-control" placeholder="Text input">
+    <div class="member-type-selection">
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio0" value="booster" checked="checked"> Miner
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="booster"> Booster
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="hauler"> Hauler
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="overwatch"> Overwatch
+        </label>
+    </div>
+    <button type="button" class="btn btn-primary member-add-btn">Add Member</button>
     <div class="members well">
         <div class="member">
             <div class="row">
@@ -119,6 +169,17 @@
         </div>
     </div>
     <h3>Ores</h3>
+    <div class="ore-options">
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Normal
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> +5% Types
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> +10% Types
+        </label>
+    </div>
     <div class="ores well">
     </div>
 </div>
