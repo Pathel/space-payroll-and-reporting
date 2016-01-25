@@ -1,0 +1,41 @@
+/* Navbar alterations */
+
+.navbar {
+    border-radius: 0;
+}
+
+.root-container {
+    background-color: rgba(0,0,0,.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ccc;
+}
+
+body {
+    background-image: url('img/space.jpg');
+    background-position: bottom;
+}
+
+/* Members */
+
+.well {
+    background-color: rgba(0,0,0,.8);
+    border: 1px solid black;
+}
+
+.member {
+}
+
+a.member-remove {
+    float: right;
+}
+
+.blocks-title h2 {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .blocks-button .btn {
+        float: right;
+    }
+}
