@@ -2,6 +2,7 @@
 
 .navbar {
     border-radius: 0;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -15,7 +16,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: #ccc;
-    border-radius: 10px;
 }
 
 body {
@@ -54,13 +54,23 @@ a.member-remove {
 .ore-options {
     margin-bottom: 10px;
 }
+
+.ore-img-container img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.ore-title {
+    text-align: center;
+    font-size: 15px;
+}
+
 .blocks-title h2 {
     margin-top: 0;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 5px;

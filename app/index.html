@@ -32,7 +32,9 @@
                     <li><a href="#/view3">Data Export View</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a>[.WW.]</a></li>
+                    <li>
+                        <a href="#halp"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -40,12 +42,9 @@
 
 
     <div class="background-root">
-        <div class="root-container container">
+        <div class="root-container container-fluid">
 
             <div ng-view></div>
-            <div class="col-md-12">
-                <div>Angular seed app: v<span app-version></span></div>
-            </div>
 
         </div>
     </div>
