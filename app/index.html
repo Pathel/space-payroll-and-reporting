@@ -14,6 +14,37 @@
 </head>
 <body>
 
+<!-- Help modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Help</h4>
+            </div>
+            <div class="modal-body">
+                <h4>Blocks</h4>
+                <p>In SPAR, you track your mining in 'blocks'.  Blocks represent arbitrary chunks of time in which you're mining.  You can start and end these however you like, but to ensure that the report coming out of SPAR constitutes as a accurate representation of what you're doing in-game as possible, you should follow these guidelines: </p>
+                <ul>
+                    <li>When a new member joins you to start mining, end the current block.  Start a new block and add them as a participant.</li>
+                    <li>Categorize your participants.</li>
+                    <li>Track the right ores using the filters on the right.  You can remove ores that aren't present by clicking the 'x' that appears when you hover it.</li>
+                </ul>
+                <h4>Views</h4>
+                <p>SPAR contains several views:</p>
+                <ul>
+                    <li>The <strong>Mining View</strong>, in which you start, populate, and end blocks.  Once you end the session, you will pass automatically into the reporting view.</li>
+                    <li>In the<strong>Reporting View</strong>, you can view your results.  If you find that you need to alter the data, you can go back to the mining view and make any necessary changes.</li>
+                    <li>The <strong>Data Export View</strong> shows you a JSON version of the session -- basically, this is a dump of the model at the time of the session ending (including further edits up to the point of generation).  Persistent storage via database, API stuff, login &amp; history features may be added if the tool sees enough use for me to spend the time for it. </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <span>For more help information, see the <a href="#">full documentation.</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -33,7 +64,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#halp"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+                        <a data-toggle="modal" data-target="#myModal" href=""><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
                     </li>
                 </ul>
             </div><!--/.nav-collapse -->
